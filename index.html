@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web1</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Задание 1</h1>
+    <div class="box">
+        <div class="text">
+            Подключение с серверу kubsu-dev.ru происходит при помощи Git Bush с использованием команды ssh.
+        </div>
+    </div>
+    <div class="box">
+        <div class="text">1. Соединяемся с сервером по ssh: вводим логин и пароль.</div>
+        <img src="wel.png" alt="">
+        <div class="subtitle">
+            Все подключилось, для дальнейшей работы также нужна команда bash.
+        </div>
+    </div>
+    <div class="box">
+        <div class="text">2. Команда ping</div>
+        <div class="subtitle">Эта команда для проверки подключения. Она показывает, может ли удаленный компьютер подключиться
+            к серверу, а также задержку подключения:
+        </div>
+        <img src="ping.png" alt="">
+    </div>
+    <div class="box">
+        <div class="text">3. Команда nslookup ( A-запись )</div>
+        <div class="subtitle">
+            Команда nslookup позволяет узнать содержимое DNS 
+        </div>
+        <div class="subtitle">
+            A-запись связывает сам домен и IP адрес. То есть такая запись позволяет найти IP:
+        </div>
+        <img src="n1.png" alt="">
+    </div>
+    <div class="box">
+        <div class="text">4. Команда nslookup ( MX-запись )</div>
+        <div class="subtitle">
+            MX -запись - это запись, которая указывает на сервер, который принимает посту для домена
+        </div>
+        <img src="n2.png" alt="">
+    </div>
+    <div class="box">
+        <div class="text">5. Команда Whois</div>
+        <div class="subtitle">
+            Команда whois используется для для проверки даты регистрации домена
+        </div>
+        <div class="subtitle">
+            Эта команда, кроме даты регистрации домена, показывает информацию о том, кому принадлежит домен,
+            дату истечения срока домена, расположение.
+        </div>
+        <img src="whois.png" alt="">
+    </div>
+</body>
+</html>
