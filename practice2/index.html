@@ -59,7 +59,68 @@
             8. Проверка работы <span>index.php</span>
         </div>
         <img src="php.png" alt="">
-        <div class="subtitle">Работает!</div>
+    </div>
+    <h2>HTTP - запросы</h2>
+    <div class="box">
+        <div class="text">Соединяемся с сервером при помощи telnet ( указываем IP - адрес и порт )</div>
+
+        <img src="telnet.png" alt="">
+        <div class="subtitle">Соединение прошло успешно</div>
+        <div class="subtitle">Сами запросы лучше сначала записать в текстовый файл, а потом копировать оттуда, так
+             как можно не успеть записать.
+        </div>
+    </div>
+    <div class="box">
+        <div class="text">1. Получение главной страницы, используем метод <span>GET</span> 
+        в протоколе <span>HTTP 1.0</span></div>
+        <div class="subtitle"><span>HTTP 1.1</span> имеет обязятельный заголовок хоста</div>
+        <div class="subtitle"><span>HTTP 1.0</span> не требудет заголовок хоста</div>
+        <img src="main-page.png" alt="">
+    </div>
+    <div class="box">
+        <div class="text">2. Получение внутренней страницы, используем метод <span>GET</span> в протоколе <span>HTTP 1.1</span></div>
+        <img src="inner.png" alt="">
+    </div>
+    <div class="box"><div class="text">3. Определение размера файла <span>file.tar.gz</span> без скачивания</div></div>
+    <div class="subtitle">Используем метод <span>HEAD</span>. Этот метод аналогичен методу <span>GET</span>, но не возвращает тело ответа
+    , только метаданные.</div>
+    <div class="subtitle">Итоговый размер файла: 11335 байт</div>
+    <img src="size.png" alt="">
+
+    <div class="box">
+        <div class="text">
+            4. Определение медиатипа ресурса <span>image.png</span>, используем метод <span>HEAD</span>
+        </div>
+        <div class="subtitle">
+            Медиатип - это специальная текстовая метка, которая прикрепляется к объекту и описывает тип этого объекта
+        </div>
+        <div class="subtitle">
+            Полученный медиатип: <span>image/png</span>
+        </div>
+        <img src="meta.png" alt="">
+    </div>
+    <div class="box">
+        <div class="text">
+            5. Отправление комментария на сервер по адресу <span>index.php</span>, используем метод <span>POST</span>
+        </div>
+        <div class="subtitle">Метод <span>POST</span>позволяет оправлять данные на сервер.</div>
+        <div class="subtitle">
+            С помощью <span>Content type</span> указываем тип отправляемых данных. В простом запросе используется такая, как тут.
+        </div>
+        <img src="comment.png" alt="">
+    </div>
+    <div class="box">
+        <div class="text">6. Получение первых 100 байт файла <span>file.tar.gz</span></div>
+        <img src="first100.png" alt="">
+    </div>
+    <div class="box">
+        <div class="text">
+            7. Определение кодировки <span>index.php</span>, используем метод <span>HEAD</span>
+        </div>
+        <div class="subtitle">
+            Кодировка ресурса: <span>charset = UTF-8</span>
+        </div>
+        <img src="cod.png" alt="">
     </div>
 </body>
 </html>
