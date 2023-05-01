@@ -1,0 +1,83 @@
+body {
+    background-color: #138469;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+form {
+    margin: 50px auto;
+    font-family: sans-serif;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px 40px;
+}
+.text {
+    height: 40px;
+    width: 100%;
+    padding-left: 12px;
+    background-color: #e8e8e8;
+    border:none;
+    border-radius:3px;
+    margin-top: 15px;
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.year {
+    margin-top:20px;
+    height: 40px;
+    width: 210px;
+    padding-left: 10px;
+    cursor:pointer;
+    border:none;
+    background-color: #f1f1f1;
+    border-radius:3px;
+}
+
+.skills {
+    width: 210px;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 210px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #198f73;
+    color:rgb(255, 255, 255);
+    border:none;
+    border-radius:3px;
+}
+
+.btn:hover {
+    background-color: #138469;
+}
+
+.sex, .limbs {
+    margin-top: 15px;
+}
+
+textarea {
+    width: 100%;
+    border:none;
+    background-color: #ebebeb;
+    padding: 12px;
+    border-radius:5px;
+}
+
+.agree {
+    margin-top: 10px;
+    cursor:pointer;
+}
+
+.btn {
+    margin: 15px auto;
+    width: 100%;
+}
