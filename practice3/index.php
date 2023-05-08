@@ -73,7 +73,7 @@
         </div>
 
         <br>
-        <textarea rows="4" placeholder="Your bio"></textarea><br>
+        <textarea rows="4" placeholder="Your bio" name="bio"></textarea><br>
 
         <input type="checkbox" name="agree" value="yes" class="agree">
         <label for="agree" >I agree</label><br>
