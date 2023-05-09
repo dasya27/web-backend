@@ -11,14 +11,24 @@
     $username = 'u52955'; 
     $password = '7977617';
 
+    //проверка полей на пустоту
+
     //подключение к базе данных
-    //PDO может выюрасывать исключения, поэтому используем блок try catch
+    //PDO может выбрасывать исключения, поэтому используем блок try catch
     try {
-        $conn = new PDO('mysql:host=localhost;dbname=u52955', $username, $password,);
         
-        //проверка полей на пустоту
-        if(empty($_POST['name'])) exit("Поле name не заполнено");
-        if(empty($_POST['mail'])) exit("Поле email не заполнено");
+        if(empty($_POST['name'])) 
+        {
+            echo '<script>alert("Поле name не заполнено")</script>';
+            exit();
+        }
+        if(empty($_POST['mail']))
+        {
+            echo '<script>alert("Поле mail не заполнено")</script>';
+            exit();
+        }
+
+        $conn = new PDO('mysql:host=localhost;dbname=u52955', $username, $password,);
 
         //подготавливаем запрос
         $query1 = $conn->prepare("INSERT INTO Applications (name, year, mail, sex, limbs, biography) VALUES(?,?,?,?,?,?)");
@@ -41,7 +51,28 @@
                 $query3 = $conn->prepare("INSERT INTO Applications_skills VALUES($last_id, $element)");
                 $query3->execute();
             }
-        echo "Все отправлено!!!";
+        echo "<div class='good'>
+            Successfully submitted:)
+        </div>
+        <img src='https://img.freepik.com/free-icon/check_318-760859.jpg?size=626&ext=jpg&ga=GA1.2.70674923.1683627705&semt=sph' alt=''>
+        <style type='text/css'>
+            .good {
+                color:#1c233c;
+                font-family: sans-serif;
+                font-size: 30px;
+                font-weight: 600;
+                text-align: center;
+                margin-top: 100px;
+            }
+            body {
+                background-color: #7282ba;
+            }
+            img {
+                display: block;
+                margin: 30px auto;
+                width: 100px;
+            }
+        </style>";
     }
     catch(PDOException $e)
     {
