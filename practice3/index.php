@@ -63,9 +63,9 @@
                     Skills:
                 </div>
                 <select multiple class="skills" name="skills[]" required>
-                    <option value="1">Kind</option>
-                    <option value="2">Honest</option>
-                    <option value="3">Funny</option>
+                    <option value="Kind">Kind</option>
+                    <option value="Honest">Honest</option>
+                    <option value="Funny">Funny</option>
                 </select><br>
             </div>
         </div>
