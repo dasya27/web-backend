@@ -16,17 +16,6 @@
     //подключение к базе данных
     //PDO может выбрасывать исключения, поэтому используем блок try catch
     try {
-        
-        if(empty($_POST['name'])) 
-        {
-            echo '<script>alert("Поле name не заполнено")</script>';
-            exit();
-        }
-        if(empty($_POST['mail']))
-        {
-            echo '<script>alert("Поле mail не заполнено")</script>';
-            exit();
-        }
 
         $conn = new PDO('mysql:host=localhost;dbname=u52955', $username, $password,);
 
@@ -48,8 +37,12 @@
         //просматриваем полученный массив
         foreach ($_POST['skills'] as $element)
             {
-                $query3 = $conn->prepare("INSERT INTO Applications_skills VALUES($last_id, $element)");
-                $query3->execute();
+                $stmt = $conn->prepare("INSERT INTO Applications_skills (application_id, ability_id)
+                    VALUES (:application_id, (SELECT id FROM Skills WHERE name=:skill_name))");
+                $stmt->bindParam(':application_id', $last_id);
+                $stmt->bindParam(':skill_name', $element);
+
+                $stmt->execute();
             }
         echo "<div class='good'>
             Successfully submitted:)
