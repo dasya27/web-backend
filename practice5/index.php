@@ -275,7 +275,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET')
             //$stmt->execute([$_SESSION['uid']]);
 
             // находим номер заявки по идентификатору пользователя
-            $stmt = $db->prepare("SELECT id FROM applications2 where user_id=? ");
+            $stmt = $db->prepare("SELECT application_id FROM applications2 where user_id=? ");
             $stmt->execute([$_SESSION['uid']]);
             $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
