@@ -255,7 +255,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET')
         $stmt->execute([$_POST['name'], $_POST['email'], $_POST['birthday'], $gender, $_POST['limbs'], $_POST['bio'],   $_SESSION['uid']]);
 
         
-        $stmt = $db->prepare("SELECT * FROM application_ability2 where application_id=(SELECT id FROM applications2 where user_id=?) ");
+        $stmt = $db->prepare("SELECT * FROM application_ability2 where application_id=(SELECT application_id FROM applications2 where user_id=?) ");
         $stmt->execute([$_SESSION['uid']]);
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -284,7 +284,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET')
             {
                 echo($ability);
                 $stmt = $db->prepare("INSERT INTO application_ability2 (application_id, ability_id)
-                    VALUES (:application_id, (SELECT id FROM abilities2 WHERE name=:ability_name))");
+                    VALUES (:application_id, (SELECT ability_id FROM abilities2 WHERE name=:ability_name))");
                 $stmt->bindParam(':application_id', $result[0]["id"]);
                 $stmt->bindParam(':ability_name', $ability);
         
@@ -345,3 +345,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET')
     setcookie('success', 1);
     header('Location: index.php');  
 }
+
+//ваня
+//67111657
+//64761a7be9007
