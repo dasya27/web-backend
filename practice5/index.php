@@ -108,7 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET')
         $values['bio'] = empty($result[0]['bio']) ? '' : strip_tags($result[0]['bio']);
         $values['contract'] = empty($result[0]['contract']) ? '' : strip_tags($result[0]['contract']);
 
-        $stmt = $db->prepare("SELECT * FROM application_ability2 where application_id=(SELECT id FROM applications2 where user_id=?)");
+        $stmt = $db->prepare("SELECT * FROM application_ability2 where application_id=(SELECT application_id FROM applications2 where user_id=?)");
         $stmt->execute([$_SESSION['uid']]);
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
       
