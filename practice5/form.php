@@ -13,6 +13,16 @@
   <title>Контактная форма</title>
 </head>
 <body>
+<?php
+if (!empty($_COOKIE[session_name()]) && !empty($_SESSION['login'])){
+    echo '
+        <form action="" method="POST" >
+            <input type="hidden" name="logout" value="true">
+            <button type="submit">Выйти</button>
+        </form>
+    ';
+}
+?>
   <div class="p-0 card text-bg-light" id="form">
     <div class="card-header">
       <h4>Свяжитесь с нами</h4>
@@ -23,7 +33,7 @@
 
           <div class="row mb-2">
             <div class="col-md-8 mb-4 mb-md-0">
-              <label for="name" class="form-label">Имя</label>
+              <label for="name" class="form-label">Your name</label>
               <input type="text" class="form-control <?php print($err['name'] ? "is-invalid" : ($values['name'] ? "is-valid" : ""))?>" 
                 id="name" name="name" value=<?php print($values['name'])?>>
 
@@ -67,7 +77,7 @@
             </div>
             
             <div class="col-md-8">
-              <p>Расскажите о себе:</p>
+              <p>Your biography:</p>
               <textarea class="form-control <?php print($err['bio'] ? "is-invalid" : ($values['bio'] ? "is-valid" : ""))?>" name="bio" id="biography" style="min-height: 120px"><?php print($values['bio'])?></textarea>
             </div>
           </div>
