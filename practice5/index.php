@@ -284,7 +284,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET')
             {
                 echo($ability);
                 $stmt = $db->prepare("INSERT INTO application_ability2 (application_id, ability_id)
-                    VALUES (:application_id, (SELECT ability_id FROM abilities2 WHERE name=:ability_name))");
+                    VALUES (:application_id, (SELECT ability_id FROM abilities2 WHERE ability_name=:ability_name))");
                 $stmt->bindParam(':application_id', $result[0]["id"]);
                 $stmt->bindParam(':ability_name', $ability);
         
