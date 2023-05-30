@@ -9,81 +9,79 @@
  **/
 
 header('Content-Type: text/html; charset=UTF-8');
-
-$user = 'u52955';
-$pass = '7977617';
-$db = new PDO('mysql:host=localhost;dbname=u52955', $user, $pass,
+$db = new PDO('mysql:host=localhost;dbname=u52945', 'u52945', '3219665',
   [PDO::ATTR_PERSISTENT => true, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 
-session_start();
 
+// Начинаем сессию.
+session_start();
 // В суперглобальном массиве $_SESSION хранятся переменные сессии.
-// Будем сохранять туда логин после успешной авторизации.
+// Будем сохранять туда логин после успешной авторизации
 if (!empty($_SESSION['login'])) {
-    
-  // Если есть логин в сессии, то пользователь уже авторизован.
-  // TODO: Сделать выход (окончание сессии вызовом session_destroy()
-  //при нажатии на кнопку Выход).
-  // Делаем перенаправление на форму.
   header('Location: ./');
 }
 
-// если это GET-запрос
+
+
+// В суперглобальном массиве $_SERVER PHP сохраняет некторые заголовки запроса HTTP
+// и другие сведения о клиненте и сервере, например метод текущего запроса $_SERVER['REQUEST_METHOD'].
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 ?>
 <html>
-    <head>
-        <link rel="icon" type="image/x-icon" href="favicon.svg">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-        <title>Логин</title>
-        <link rel="stylesheet" href="style5.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" defer></script>
-    </head>
-    <body>
-    <div class="col col-10 col-md-11" id="forma">
-            <form id="form1" action="" method="POST">
-                <div class="form-group">
-                    <label for="name">Логин</label>
-                    <input name="login" id="name" class="form-control" placeholder="Введите ваш логин">
-                </div>
-                <div class="form-group">
-                    <label for="pwd">Пароль</label>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="style.css">
 
-                    <input name="password" class="form-control" id="pwd" placeholder="Введите ваш пароль" >
+</head>
+<body>
+<form class="form1" action="" method="POST">
 
-                </div>
-            
-                <input type="submit" id="btnend" class="btn btn-primary" value="Отправить">
-            </form>
-        </div>
-        </div>
-    </body>
+  <h2>Авторизация</h2>
+
+  <div class="fields">
+      <div class="item">
+          <label for="name">Логин</label><br>
+          <input name="login" type="text" placeholder="Введите логин" />
+      </div>
+      <div class="item">
+              <label for="email">Пароль</label><br>
+              <input name="pass" type="text" placeholder="Введите пароль" />     
+      </div>
+  </div>
+
+    <div>
+      <button  type="submit">Войти</button>
+    </div>
+</form>
+</body>
+
+
 </html>
 <?php
 }
-
-// если это POST-запрос, то нужно сделать авторизацию с записью логина в сессию.
-// проверяем есть такой логин и пароль в бд, если все ок, то авторизуем пользователя
+// Иначе, если запрос был методом POST, т.е. нужно сделать авторизацию с записью логина в сессию.
 else {
-      try {
-        $stmt = $db->prepare("SELECT * FROM users where user=?");
-        $stmt->execute([$_POST['login']]);
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        $flag = false;
-        echo($_POST['password']);
-        if(password_verify($_POST['password'], $result['password']))
-        {
-            $_SESSION['login'] = $_POST['login'];
-            $_SESSION['uid'] =$result["id"];
-            header('Location: ./');
-        }
+  try {
+      $stmt = $db->prepare("SELECT * FROM users_5 where login=?");
+      $stmt -> execute([$_POST['login']]);
+      $row = $stmt->fetch(PDO::FETCH_ASSOC);
+      $flag = false;
+      if(password_verify($_POST['pass'], $row['password']))
+      {
+          $_SESSION['login'] = $_POST['login']; 
+          $_SESSION['uid'] = $row["id"];
+          header('Location: ./');
       }
-      
-      catch(PDOException $e){
-        print('Error : ' . $e->getMessage());
-        exit();
+   
+        
     }
+    catch(PDOException $e){
+      print('Ошибка при авторизации: ' . $e->getMessage());
+      exit();
+
+  }
+ 
 }
