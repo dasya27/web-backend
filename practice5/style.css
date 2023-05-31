@@ -38,7 +38,8 @@ h4 {
 }
 
 .out {
-  background-color: #47860d;
+  background-color: #6f6f6f;
+  border-radius: 5px;
   color:white;
   cursor:pointer;
 }
