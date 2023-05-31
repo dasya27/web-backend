@@ -82,3 +82,7 @@ html, body {
   width: 130px;
   margin: 20px auto;
 }
+
+.btn:hover {
+  background-color: rgb(203, 117, 5)
+}
