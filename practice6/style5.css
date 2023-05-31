@@ -1,6 +1,6 @@
 html, body {
     height: 100vh;
-  background: linear-gradient(90deg, rgb(77 179 108) 0%, rgb(119 171 106) 100%);
+    background-color: rgb(64, 84, 186);
   font-family: monospace;
   font-size: 20px;
   }
@@ -9,11 +9,18 @@ html, body {
 	
     margin: 30px auto;
     background-color: white;
-    border: 2px solid;
+    border: none;
+    width: 700px;
+    border-radius: 7px;
   }
   #form1{
     padding: 2vw;
     padding-bottom: 0;
+    width: 700px;
+  }
+
+  .form-control {
+    width: 300px;
   }
 
   .form-group{
@@ -31,8 +38,14 @@ html, body {
   text-decoration: none;
   }
   .error {
-  border: 2px solid red;
+  border: 2px solid rgb(224, 74, 74);
 }
 #messages{
-	text-align: center;
+	width: 700px;
+  margin: 20px auto;
+  margin: 30px auto;
+  background-color: white;
+  border: none;
+  width: 700px;
+  border-radius: 7px;
 }
