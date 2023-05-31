@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
-    <title>backend_five</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <title>web-5</title>
 </head>
 <body>
 
@@ -23,19 +27,19 @@
 
     <form  class="form1" action="index.php" method="POST">
 
-        <h2>Регистрация</h2>
+        <h2>Registration</h2>
 
         <div class="fields">
             <div class="item">
-                <label for="name">Имя</label><br>
-                <input type="text" name="name" value="<?php print $values['name'];?>" placeholder="Введите ваше имя">
+                <label for="name">Your name</label><br>
+                <input type="text" name="name" value="<?php print $values['name'];?>">
             </div>
             <div class="item">
-                    <label for="email">E-mail</label><br>
+                    <label for="email">Your e-mail:</label><br>
                     <input type="text" name="email" value="<?php print $values['email'];?>" placeholder="Введите e-mail">     
             </div>
             <div class="item">
-                Ваша биография<br>
+                Your biography:<br>
             <textarea name="biography" value="<?php print $values['biography'];?>" placeholder="Расскажите о себе..." ><?php print $values['biography'];?></textarea>
             </div>
         </div>
@@ -44,23 +48,23 @@
             <div class="colblock">
 
                 <div class="gender">
-                    Ваш пол:<br> 
+                    You are:<br> 
                     <div class="changeGen">
                         <label>
                             <input type="radio" name="gender" value="F" <?php if ($values['gender']=='F') {print 'checked';} ?> >
-                            Женский &#9792;
+                            Woman &#9792;
                         </label>
                         <br>
                         <label>
                             <input type="radio" name="gender" value="M"  <?php if ($values['gender']=='M') {print 'checked';} ?> >
-                            Мужской &#9794;
+                            Man &#9794;
                         </label>
                     </div>
                 </div>  
 
                 <div class="birth">
                     <label>
-                        Дата Рождения:<br>
+                        Birthday:<br>
                         <input name="birth" type="date" value="<?php print $values['birth'];?>">
                     </label> 
                 </div>
@@ -72,7 +76,7 @@
             <div class="colblock">
 
                 <div class="limbss">
-                Количество <br> Ваших конечностей: <br> 
+                Limbs: <br> 
                     <div class="rad">
                         <label>
                             <input type="radio" name="limbs" value="1" <?php if ($values['limbs']=='1') {print 'checked';}?> > 1
@@ -91,7 +95,7 @@
 
                 <div class="superpowers">   
                     <label>
-                        Ваши <br> сверхспособности:<br>
+                        Your skills: <br>
                         <div class="powers">
                             <select name="ability[]" multiple="multiple">
                                 <option value="immortality" <?php if(!empty($values['ability'][0])) {if ($values['ability'][0]=="immortality") {print 'selected';}} ?>> Бессмертие </option>
@@ -108,11 +112,11 @@
         
         <div class="сheck">
             <input class="сheckbox" type="checkbox" id="agree" name="agree" <?php if ($values['agree']== "1") {print 'checked';}?>>
-            <label for="agree">С контрактом ознакомлен(a)</label>
+            <label for="agree">Familiar with the contract</label>
         </div>
 
         <div>
-            <button  type="submit">Отправить</button>
+            <button  type="submit">Send</button>
         </div>
 
     </form>
