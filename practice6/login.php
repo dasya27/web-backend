@@ -66,7 +66,7 @@ else {
         exit();
     }
 
-  if($flag){
+  if(flag){
 
   $_SESSION['login'] = $_POST['login'];
 
