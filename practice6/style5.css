@@ -62,10 +62,15 @@ html, body {
   display: block;
   background-color: rgb(64, 84, 186);
   border:none;
+  border-radius:5px;
   cursor:pointer;
   color:white;
   width: 70px;
   margin: 20px auto;
+}
+
+.login {
+  margin-top: 20px;
 }
 
 .btn {
