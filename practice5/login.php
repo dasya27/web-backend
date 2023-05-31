@@ -62,8 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         }
 
         form {
-            margin: 20px auto;
-            width:250px;
+            margin: 20px;
         }
     </style>
     <body>
