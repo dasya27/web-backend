@@ -41,17 +41,37 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         <link rel="stylesheet" href="style5.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" defer></script>
     </head>
+    <style>
+        .login, .pass {
+            width: 250px;
+            margin-top: 5px;
+        }
+
+        .btn {
+            background-color: #47860d;
+            border:none;
+            cursor:pointer;
+            color:white;
+            width: 130px;
+            margin-top: 5px;
+        }
+
+        .btn:hover {
+            background-color: #346309;
+            color:white;
+        }
+    </style>
     <body>
     <div class="col col-10 col-md-11" id="forma">
             <form id="form1" action="" method="POST">
                 <div class="form-group">
                     <label for="name">Логин</label>
-                    <input name="login" id="name" class="form-control" placeholder="Введите ваш логин">
+                    <input name="login" id="name" class="form-control login" placeholder="Введите ваш логин">
                 </div>
                 <div class="form-group">
                     <label for="pwd">Пароль</label>
 
-                    <input name="password" class="form-control" id="pwd" placeholder="Введите ваш пароль" >
+                    <input name="password" class="form-control pass" id="pwd" placeholder="Введите ваш пароль" >
 
                 </div>
             
