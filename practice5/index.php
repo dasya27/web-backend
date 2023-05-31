@@ -116,8 +116,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET')
           $values['abilities'][$res['ability_id'] - 1] = empty($res) ? '' : strip_tags($res['ability_id']);
         }
 
-        $msg[] = "Вход с логином {$_SESSION['login']}, uid: {$_SESSION['uid']}";
-        $msg[] = "<form action=\"\" method=\"POST\"> <input style=\"display: none;\"name=\"logout\" value=\"true\"> <input type=\"submit\" value=\"Выйти\"></form>";
+        $msg[] = "Выполнен вход с логином {$_SESSION['login']}, uid: {$_SESSION['uid']}";
+        $msg[] = "<form action=\"\" method=\"POST\"> <input style=\"display: none;\"name=\"logout\" value=\"true\"> <input type=\"submit\" value=\"Выйти\" class=\"out\"></form>";
     }
 
     // включаем файл index.php, 
