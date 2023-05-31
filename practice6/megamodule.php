@@ -1,9 +1,9 @@
 <?php
 
 global $db;
-    $user = 'u52843';
-    $pass = '5813998';
-    $db = new PDO('mysql:host=localhost;dbname=u52843', $user, $pass, [
+    $user = 'u52955';
+    $pass = '7977617';
+    $db = new PDO('mysql:host=localhost;dbname=u52955', $user, $pass, [
         PDO::ATTR_PERSISTENT => true,
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ]);
