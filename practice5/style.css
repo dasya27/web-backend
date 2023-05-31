@@ -6,7 +6,14 @@ body {
   max-width: 800px;
   padding: 10px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 20px;
+}
+
+h4 {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 35px;
+  color:rgb(255, 255, 255)
 }
 
 #error {
@@ -15,4 +22,17 @@ body {
 
 #success {
   color: #198754;
+}
+
+.btn {
+  background-color: #47860d;
+  border:none;
+  cursor:pointer;
+  color:white;
+  width: 130px;
+}
+
+.btn:hover {
+  background-color: #346309;
+  color:white;
 }
