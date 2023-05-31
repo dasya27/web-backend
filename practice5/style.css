@@ -48,7 +48,7 @@ body {
 .form1 button {
   height: 100vh;  
   overflow-y: hidden;
-  background-color: #f86b0e;
+  background-color: #eb38a6;
   cursor:pointer;
   color: white;
   border-radius: 5px;
@@ -69,7 +69,7 @@ body {
 }
 
 .form1 button:hover {
-  background-color: #ea5f02;
+  background-color: #d01e8c;;
 }
 .form1 .fields input {
   border-radius: 5px;
@@ -166,22 +166,20 @@ body {
   margin: 50px auto 0 auto;
 }
 .saves {
-  border: 5px solid #66ff00;
-  background-color: #66ff00;
+  background-color: #34be52;
   box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.5);
 
   border-radius: 5px;
-  color: rgb(18, 124, 14);
+  color: rgb(12, 95, 9);
   font-size: 18px;
   text-align: center;
 
-  max-width: 500px;
+  max-width: 600px;
   margin: 5px auto 10px auto;
 }
 
 .collogin {
-  border: 5px solid #e4289c;
-  background-color: #e4289c;
+  background-color: #eb38a6;
   box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.5);
 
   border-radius: 5px;
