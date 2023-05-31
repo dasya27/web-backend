@@ -20,6 +20,7 @@ html, body {
     border: none;
     width: 700px;
     border-radius: 7px;
+    padding: 20px;
   }
   #form1{
     padding: 2vw;
@@ -66,12 +67,12 @@ html, body {
   cursor:pointer;
   color:white;
   width: 70px;
-  margin: 20px auto;
 }
 
 .login {
-  margin-top: 20px;
+  padding: 2vw;
 }
+
 
 .btn {
   background-color: rgb(244, 138, 0);
