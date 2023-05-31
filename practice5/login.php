@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             cursor:pointer;
             color:white;
             width: 130px;
-            margin-top: 5px;
+            margin-top: 15px;
         }
 
         .btn:hover {
@@ -62,7 +62,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         }
 
         form {
-            margin: 20px;
+            margin: 20px auto;
+            width:250px;
         }
     </style>
     <body>
