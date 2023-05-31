@@ -1,12 +1,12 @@
 body {
-  font-family: Verdana;
-  background: -webkit-linear-gradient(90deg,#11088a,#6254e4,#9375f0,#4084fe, #c465d9); /* Chrome 10-25, Safari 5.1-6 */ background: linear-gradient(90deg,#11088a,#6254e4,#9375f0,#4084fe, #c465d9);
+  font-family:sans-serif;
+  background-color:#f8684c;
 }
 
 .form1 {
   border-radius: 10px;
   color: #000000;
-  font-weight: bold;
+  font-weight: 600;
 
   border: 1px solid rgb(255, 255, 255);
   margin: 50px auto 100px auto;
@@ -48,8 +48,8 @@ body {
 .form1 button {
   height: 100vh;  
   overflow-y: hidden;
-  background: -webkit-linear-gradient(90deg,#11088a,#6254e4,#9375f0,#4084fe, #c465d9);
-  background: linear-gradient(90deg,#11088a,#6254e4,#9375f0,#4084fe, #c465d9);
+  background-color: #00a761;
+  cursor:pointer;
   color: white;
   border-radius: 5px;
   border: 1px solid rgb(255, 255, 255);
@@ -69,15 +69,15 @@ body {
 }
 
 .form1 button:hover {
-  opacity: 0.9;
+  background-color: #038b52;
 }
 .form1 .fields input {
   border-radius: 5px;
-  border: 3px solid rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
+  border: none;
+  background-color: rgb(237, 236, 236);
   color: rgb(0, 0, 0);
   width: 100%;
-  height: 30px;
+  height: 35px;
   margin-top: 5px;
   margin-bottom: 20px;
 }
@@ -86,10 +86,10 @@ body {
   resize: none;
   height: 150px;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(241, 241, 241);
   color: rgb(0, 0, 0);
   border-radius: 5px;
-  border: 3px solid rgb(0, 0, 0);
+  border: none;
   margin-top: 5px;
   margin-bottom: 20px;
 }
