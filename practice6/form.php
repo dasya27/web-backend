@@ -33,7 +33,7 @@ else
     echo'
     <div class = "login">
     <form action="login.php" target="_blank">
-    <button class = "login">Войти</button>
+    <button class = "log_btn">Войти</button>
     </form>
     </div>
 ';
