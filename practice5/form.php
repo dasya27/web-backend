@@ -10,13 +10,11 @@
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 
-  <title>Контактная форма</title>
+  <title>Contact us</title>
 </head>
 <body>
+  <h4>Contact us</h4>
   <div class="p-0 card text-bg-light" id="form">
-    <div class="card-header">
-      <h4>Свяжитесь с нами</h4>
-    </div>
     <div class="card-body">
       <div class="card-text">
         <form action="" method="POST">
@@ -77,7 +75,7 @@
               <label class="form-check-label" for="contract">С контрактом ознакомлен(-а)</label>
             </div>
 
-            <input class="btn btn-primary mt-3" type="submit" value="Отправить">
+            <input class="btn mt-3" type="submit" value="Отправить">
           </div>
         </form>
       </div>
