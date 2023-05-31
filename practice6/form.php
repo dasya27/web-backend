@@ -87,7 +87,7 @@ else
             </div>
             <label><input type="checkbox" class="form-check-input <?php if ($errors['checkbox']) {print 'is-invalid';} ?>" id="checkbox" value="1" name="checkbox" <?php if ($values['checkbox']=='1') {print 'checked';} ?>>
                 с контрактом ознакомлен (а) </label><br>
-            <input type="submit" id="btnend" class="btn btn-primary" value="Отправить">
+            <input type="submit" id="btnend" class="btn" value="Отправить">
         </form>
     </div>
     <?php
