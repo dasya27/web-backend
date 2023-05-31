@@ -9,6 +9,8 @@ html, body {
     font-size: 35px;
     margin-bottom: 15px;
     text-align: center;
+    color:white;
+    margin-top: 20px;
   }
   
   #forma{
@@ -56,7 +58,7 @@ html, body {
   border-radius: 7px;
 }
 
-.login {
+.log_btn {
   background-color: rgb(64, 84, 186);
   border:none;
   cursor:pointer;
