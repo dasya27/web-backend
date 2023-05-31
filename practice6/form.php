@@ -37,6 +37,7 @@ else
     </div>
 ';
 ?>
+        <h4>Contsct us</h4>
         <form id="form1" action="" method="POST">
             <div class="form-group">
                 <label for="name">Имя:</label>
