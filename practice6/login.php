@@ -58,7 +58,7 @@ else {
       $stmt -> execute([$_POST['login']]);
       $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
       $flag=false;
-      if(password_verify($_POST['login'],$result["pass"]))
+      if(password_verify($_POST['login'],$result['pass']))
           $flag=true;
       }
       catch(PDOException $e){
