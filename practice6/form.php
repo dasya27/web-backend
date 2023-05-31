@@ -14,6 +14,7 @@
 
 
 <body>
+    <h4>Contact us</h4>
     <div class="col col-10 col-md-11" id="forma">
     
 
@@ -32,12 +33,12 @@ else
     echo'
     <div class = "login">
     <form action="login.php" target="_blank">
-    <button>Войти</button>
+    <button class = "login">Войти</button>
     </form>
     </div>
 ';
 ?>
-        <h4>Contsct us</h4>
+        
         <form id="form1" action="" method="POST">
             <div class="form-group">
                 <label for="name">Имя:</label>
