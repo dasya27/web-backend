@@ -15,21 +15,7 @@
 
 <body>
     <div class="col col-10 col-md-11" id="forma">
-    <?php
-if (!empty($messages)) {
-  print('<div id="messages">');
-  // Выводим все сообщения.
-  foreach ($messages as $message) {
-    print($message);
-  }
-
-
-  print('</div>');
-}
-
-// Далее выводим форму отмечая элементы с ошибками классом error
-// и задавая начальные значения элементов ранее сохраненными.
-?>    
+    
 
 <?php
 if (!empty($_COOKIE[session_name()]) && !empty($_SESSION['login'])){
@@ -102,7 +88,16 @@ else
             <input type="submit" id="btnend" class="btn btn-primary" value="Отправить">
         </form>
     </div>
-
+    <?php
+        if (!empty($messages)) {
+            print('<div id="messages">');
+            // Выводим все сообщения.
+            foreach ($messages as $message) {
+                print($message);
+            }
+        print('</div>');
+        }
+    ?>    
 </body>
 
 
