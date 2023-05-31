@@ -15,7 +15,7 @@ html, body {
   
   #forma{
 	
-    margin: 30px auto;
+    margin: 20px auto;
     background-color: white;
     border: none;
     width: 700px;
@@ -45,7 +45,7 @@ html, body {
   a:link {
   text-decoration: none;
   }
-  .error {
+  error {
   border: 2px solid rgb(224, 74, 74);
 }
 #messages{
@@ -59,6 +59,7 @@ html, body {
 }
 
 .log_btn {
+  display: block;
   background-color: rgb(64, 84, 186);
   border:none;
   cursor:pointer;
