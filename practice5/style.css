@@ -1,6 +1,6 @@
 body {
   font-family:sans-serif;
-  background-color:#f8684c;
+  background-color:#3851cf;
 }
 
 .form1 {
@@ -48,7 +48,7 @@ body {
 .form1 button {
   height: 100vh;  
   overflow-y: hidden;
-  background-color: #00a761;
+  background-color: #f86b0e;
   cursor:pointer;
   color: white;
   border-radius: 5px;
@@ -69,7 +69,7 @@ body {
 }
 
 .form1 button:hover {
-  background-color: #038b52;
+  background-color: #ea5f02;
 }
 .form1 .fields input {
   border-radius: 5px;
@@ -155,8 +155,9 @@ body {
 
   text-align: center;
   color: rgb(255, 62, 62);
-  font-size: 18px;
+  font-size: 15px;
 
+  padding: 2px;
   max-width: 600px;
   margin: 0 auto;
 }
