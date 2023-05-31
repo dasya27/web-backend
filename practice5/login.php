@@ -60,6 +60,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             background-color: #346309;
             color:white;
         }
+
+        form {
+            margin: 20px;
+        }
     </style>
     <body>
     <div class="col col-10 col-md-11" id="forma">
