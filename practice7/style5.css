@@ -1,0 +1,88 @@
+html, body {
+    height: 100vh;
+    background-color: rgb(64, 84, 186);
+  font-family: sans-serif;
+  font-size: 18px;
+  }
+
+  h4 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    text-align: center;
+    color:white;
+    margin-top: 20px;
+  }
+  
+  #forma{
+	
+    margin: 20px auto;
+    background-color: white;
+    border: none;
+    width: 700px;
+    border-radius: 7px;
+    padding: 20px;
+  }
+  #form1{
+    padding: 2vw;
+    padding-bottom: 0;
+    width: 700px;
+  }
+
+  .form-control {
+    width: 300px;
+  }
+
+  .form-group{
+    padding-bottom: 10px;
+  }
+  #btnend{
+    margin-top: 30px;
+    position: relative;
+    bottom:0;
+  }
+  #closebutton{
+  float: right;
+  }
+  a:link {
+  text-decoration: none;
+  }
+  error {
+  border: 2px solid rgb(224, 74, 74);
+}
+#messages{
+	width: 700px;
+  margin: 20px auto;
+  margin: 30px auto;
+  background-color: white;
+  border: none;
+  width: 700px;
+  border-radius: 7px;
+}
+
+.log_btn {
+  display: block;
+  background-color: rgb(64, 84, 186);
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  color:white;
+  width: 70px;
+}
+
+.login {
+  padding-left: 2vw;
+}
+
+
+.btn {
+  background-color: rgb(244, 138, 0);
+  border:none;
+  cursor:pointer;
+  color:black;
+  width: 130px;
+  margin: 20px auto;
+}
+
+.btn:hover {
+  background-color: rgb(203, 117, 5)
+}
