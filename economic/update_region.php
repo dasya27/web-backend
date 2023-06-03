@@ -20,6 +20,8 @@
 
     $name = $row["name"];
     $center = $row["center"];
+
+    $flag = 0;
 ?>
 
 <?php
@@ -41,6 +43,9 @@
         $stmt->bindParam(":id", $id);
 
         $stmt->execute();
+
+        $flag = 1;
+
     }
 ?>
 
@@ -62,3 +67,12 @@
         </tr>
     </table>
 </form>
+
+<?php
+    if($flag>0) {
+        echo "<div class='alert alert-success alert-dismissable'>";
+        echo "Товар был обновлён.";
+        echo "</div>";
+    }
+?>
+
