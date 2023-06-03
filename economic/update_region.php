@@ -28,5 +28,15 @@
             <td>Название региона</td>
             <td><input type="text" name="name" value="<?= $name; ?>" class="form-control" /></td>
         </tr>
+        <tr>
+            <td>Административный центр</td>
+            <td><input type="text" name="name" value="<?= $center; ?>" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit" class="btn btn-primary">Обновить</button>
+            </td>
+        </tr>
     </table>
 </form>
