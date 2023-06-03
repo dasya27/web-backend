@@ -44,7 +44,7 @@
     }
 ?>
 
-<form action="<?= htmlspecialchars($_SERVER["PHP_SELF"] . "?id={$id}"); ?>" method="post">
+<form class="form-update" action="<?= htmlspecialchars($_SERVER["PHP_SELF"] . "?id={$id}"); ?>" method="post">
     <table class="table table-hover table-responsive table-bordered">
         <tr>
             <td>Название региона</td>
