@@ -16,7 +16,7 @@
             <a href="fields.php" class="item">Fields</a>
         </div>
     </header>
-    <form action="insert_region.php" method="post">
+    <form class="form-add" action="insert_region.php" method="post">
         <div class="form-item">
             <div class="text">name</div>
             <input type="text" name="name" class="form-control">
