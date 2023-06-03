@@ -40,3 +40,21 @@
         </tr>
     </table>
 </form>
+
+<?php
+    if($_POST) {
+        $name = $_POST["name"];
+        $center = $_POST["center"];
+
+        //обновляем запись
+        $query = "UPDATE regions SET name=:name, center=:center
+            WHERE id = :id";
+        
+        $stmt = $conn->prepare($query);
+
+        $stmt->bindParam(":name", $name);
+        $stmt->bindParam(":center", $center);
+
+        $stmt->execute();
+    }
+?>
