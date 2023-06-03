@@ -54,6 +54,7 @@
 
         $stmt->bindParam(":name", $name);
         $stmt->bindParam(":center", $center);
+        $stmt->bindParam(":id", $id);
 
         $stmt->execute();
     }
