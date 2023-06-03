@@ -6,8 +6,6 @@
     connect();
 ?>
 
-
-
 <body>
     <header>
         <a href="index.php" class="logo">economic</a>
@@ -30,3 +28,35 @@
         <input type="submit" class="btn btn-warning" value="add" />
     </form>
 </body>
+
+<?php
+    //вывод записей в таблицу
+    $query = "SELECT * FROM regions";
+    $stmt = $conn->prepare($query);
+    $stmt->execute();
+    //количество строк
+    $num = $stmt->rowCount();
+
+    //если в таблице хоть что-то естт, выводим ее
+    if ($num > 0) {
+        echo "<table class='table table-hover table-responsive table-bordered'>";
+        echo "<tr>";
+            echo "<th>id</th>";
+            echo "<th>Название региона</th>";
+            echo "<th>Административный центр</th>";
+        echo "</tr>";
+
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+
+            extract($row);
+            echo "<tr>";
+                echo "<td>{$id}</td>";
+                echo "<td>{$name}</td>";
+                echo "<td>{$center}</td>";
+                
+            echo "<td>";
+                // здесь будут кнопки для просмотра, редактирования и удаления
+            echo "</td>";
+        }
+    }
+?>
