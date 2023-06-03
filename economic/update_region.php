@@ -22,25 +22,6 @@
     $center = $row["center"];
 ?>
 
-<form action="<?= htmlspecialchars($_SERVER["PHP_SELF"] . "?id={$id}"); ?>" method="post">
-    <table class="table table-hover table-responsive table-bordered">
-        <tr>
-            <td>Название региона</td>
-            <td><input type="text" name="name" value="<?= $name; ?>" class="form-control" /></td>
-        </tr>
-        <tr>
-            <td>Административный центр</td>
-            <td><input type="text" name="center" value="<?= $center; ?>" class="form-control" /></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>
-                <button type="submit" class="btn btn-success">Обновить</button>
-            </td>
-        </tr>
-    </table>
-</form>
-
 <?php
     if($_POST) {
         $name = $_POST["name"];
@@ -62,3 +43,22 @@
         $stmt->execute();
     }
 ?>
+
+<form action="<?= htmlspecialchars($_SERVER["PHP_SELF"] . "?id={$id}"); ?>" method="post">
+    <table class="table table-hover table-responsive table-bordered">
+        <tr>
+            <td>Название региона</td>
+            <td><input type="text" name="name" value="<?= $name; ?>" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td>Административный центр</td>
+            <td><input type="text" name="center" value="<?= $center; ?>" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit" class="btn btn-success">Обновить</button>
+            </td>
+        </tr>
+    </table>
+</form>
