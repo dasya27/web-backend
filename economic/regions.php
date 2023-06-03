@@ -1,6 +1,11 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
 
+<?php 
+    include('connection.php');
+    $conn = connect();
+?>
+
 <body>
     <header>
         <a href="index.php" class="logo">economic</a>
@@ -25,9 +30,6 @@
 </body>
 
 <?php
-    include('connection.php');
-    $conn = connect();
-
     //вывод записей в таблицу
     $query = "SELECT * FROM regions";
     $stmt = $conn->prepare($query);
@@ -35,7 +37,7 @@
     //количество строк
     $num = $stmt->rowCount();
 
-    //если в таблице хоть что-то естт, выводим ее
+    //если в таблице хоть что-то есть, выводим ее
     if ($num > 0) {
         echo "<table class='table table-hover table-responsive table-bordered'>";
         echo "<tr>";
@@ -51,10 +53,24 @@
                 echo "<td>{$id}</td>";
                 echo "<td>{$name}</td>";
                 echo "<td>{$center}</td>";
-                
+
             echo "<td>";
                 // здесь будут кнопки для просмотра, редактирования и удаления
+                echo "
+                <a href='update_region.php?id={$id}' class='btn btn-info left-margin'>
+                <span class='glyphicon glyphicon-edit'></span> Редактировать
+
+                <a delete-id='{$id}' class='btn btn-danger delete-object'>
+                <span class='glyphicon glyphicon-remove'></span> Удалить
+                </a>";
+                
             echo "</td>";
         }
+
+        echo "</table>";
+    }
+    else {
+        //сообщаем, что товаров нет
+        echo "<div class='alert alert-info'>Регионы не найдены не найдены.</div>";
     }
 ?>
