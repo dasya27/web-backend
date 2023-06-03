@@ -54,6 +54,13 @@ header {
     margin: 0 auto;
 }
 
+.btn-danger, .btn-info {
+    width: 150px;
+}
+.btn-info {
+    margin-right: 30px;
+}
+
 form {
     width: 370px;
     margin: 30px auto;
