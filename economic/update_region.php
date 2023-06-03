@@ -46,6 +46,9 @@
         $name = $_POST["name"];
         $center = $_POST["center"];
 
+        $_POST["name"] = $name;
+        $_POST["center"] = $center;
+
         //обновляем запись
         $query = "UPDATE regions SET name=:name, center=:center
             WHERE id = :id";
