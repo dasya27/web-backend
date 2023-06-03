@@ -30,7 +30,7 @@
         </tr>
         <tr>
             <td>Административный центр</td>
-            <td><input type="text" name="name" value="<?= $center; ?>" class="form-control" /></td>
+            <td><input type="text" name="center" value="<?= $center; ?>" class="form-control" /></td>
         </tr>
         <tr>
             <td></td>
