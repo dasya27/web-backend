@@ -10,4 +10,6 @@
     $mass = array($name, $center);
     $query->execute($mass);
 
+    header('Location: regions.php');
+
 ?>
