@@ -3,7 +3,7 @@
 
 <?php 
     include('connection.php');
-    connect();
+    $conn = connect();
 ?>
 
 <body>
