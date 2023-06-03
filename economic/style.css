@@ -61,7 +61,7 @@ header {
     margin-right: 30px;
 }
 
-form {
+.form-add {
     width: 370px;
     margin: 30px auto;
     background-color: #1d78b9;
