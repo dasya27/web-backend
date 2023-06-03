@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="style.css">
 
 <div class="right-button-margin">
-    <a href="regions.php" class="btn btn-default pull-right">Просмотр всех товаров</a>
+    <a href="regions.php" class="btn btn-warning">Просмотр всех товаров</a>
 </div>
 
 <?php 
@@ -35,7 +35,7 @@
         <tr>
             <td></td>
             <td>
-                <button type="submit" class="btn btn-primary">Обновить</button>
+                <button type="submit" class="btn btn-success">Обновить</button>
             </td>
         </tr>
     </table>
