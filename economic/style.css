@@ -72,6 +72,10 @@ header {
     row-gap: 20px;
 }
 
+.form-update {
+    width: 500px;
+}
+
 .text {
     color:white;
 }
