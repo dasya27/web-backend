@@ -56,6 +56,10 @@ header {
     margin: 0 auto;
 }
 
+.btn-primary {
+    height: 40px;
+}
+
 .btn-danger, .btn-info {
     width: 130px;
     height: 25px;
