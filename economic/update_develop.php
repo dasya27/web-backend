@@ -25,7 +25,7 @@
     $row1 = $stmt1->fetch(PDO::FETCH_ASSOC);
     
     $name = $row1["name"];
-    $health = $row["health"];
+    $health = strval($row["health"]);
     $education = $row["education"];
     $quality = $row["quality"];
     $happy = $row["happy"];
@@ -37,11 +37,11 @@
 <?php
     if($_POST) {
         $name = $_POST["name"];
-        $health = (double)$_POST["health"];
-        $education = (double)$_POST["education"];
-        $quality = (double)$_POST["quality"];
-        $happy = (double)$_POST["happy"];
-        $ecology = (double)$_POST["ecology"];
+        $health = (float)$_POST["health"];
+        $education = (float)$_POST["education"];
+        $quality = (float)$_POST["quality"];
+        $happy = (float)$_POST["happy"];
+        $ecology = (float)$_POST["ecology"];
 
         //$_POST["name"] = $name;
         $_POST["health"] = strval($health);
