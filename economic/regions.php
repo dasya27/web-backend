@@ -32,7 +32,7 @@
     </header>
     <form class="form-add" action="insert_region.php" method="post">
         <div class="form-item">
-            <div class="text">name</div>
+            <div class="text">region</div>
             <input type="text" name="name" class="form-control">
         </div>
         <div class="form-item">
