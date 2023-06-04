@@ -26,7 +26,8 @@
             <a href="regions.php" class="item">Regions</a>
             <a href="develop.php" class="item">Develop</a>
             <a href="statistics.php" class="item">Statistics</a>
-            <a href="fields_regions" class="item">Fields</a>
+            <a href="fields_regions.php" class="item">Fields & Regions</a>
+            <a href="fields.php" class="item">Fields</a>
         </div>
     </header>
     <form class="form-add" action="insert_region.php" method="post">
