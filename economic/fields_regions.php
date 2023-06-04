@@ -35,7 +35,7 @@
             <div class="text">field</div>
             <input type="text" name="field_name" class="form-control">
         </div>
-        <input type="submit" class="btn btn-warning" value="add" />
+        <input type="submit" class="btn btn-warning" value="добавить" />
     </form>
     <?php
         $query = "SELECT * FROM fields_regions";
