@@ -75,7 +75,7 @@
                 <a href='update_region.php?id={$id}' class='btn btn-info left-margin'>
                 <span class='glyphicon glyphicon-edit'></span> Редактировать
 
-                <a delete-id='{$id}' onClick=confirm_region($id) class='btn btn-danger delete-object'>
+                <a href='delete_region.php?id={$id}' class='btn btn-danger delete-object'>
                 <span class='glyphicon glyphicon-remove'></span> Удалить
                 </a>";
                 
@@ -89,18 +89,5 @@
         echo "<div class='alert alert-info'>Регионы не найдены не найдены.</div>";
     }
 ?>
-
-<script>
-    function confirm_region(id) {
-        let result = confirm("Вы действительно хотите удалить запись?");
-        if(result)
-        {
-            //window.location.href = 'delete_region.php/?id='+id;
-            <?php 
-                echo 'ccccccc';
-            ?>
-        }
-    }
-</script>
 
 </body>
