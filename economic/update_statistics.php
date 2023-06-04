@@ -37,7 +37,7 @@
     if($_POST) {
         //$name = $_POST["name"];
         $area = $_POST["area"];
-        $population = $_POST["populayion"];
+        $population = $_POST["population"];
         $production = $_POST["production"];
         $unemployment = $_POST["unemployment"];
 
