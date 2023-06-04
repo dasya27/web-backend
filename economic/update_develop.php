@@ -75,7 +75,7 @@
     <table class="table table-hover table-responsive table-bordered">
         <tr>
             <td>Название региона</td>
-            <td><input type="text" name="name" value="<?= $name; ?>" class="form-control" /></td>
+            <td><input type="text" name="name" value="<?= $name; ?>" class="form-control" readonly/></td>
         </tr>
         <tr>
             <td>Медицина</td>
