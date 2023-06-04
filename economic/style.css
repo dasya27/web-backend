@@ -57,7 +57,8 @@ header {
 }
 
 .btn-danger, .btn-info {
-    width: 150px;
+    width: 130px;
+    height: 25px;
 }
 .btn-info {
     margin-right: 30px;
