@@ -19,7 +19,6 @@
 
 <body>
     <header>
-        <div class="container">
         <a href="index.php" class="logo">economic</a>
         <div class="menu">
             <a href="regions.php" class="item">Regions</a>
@@ -28,9 +27,7 @@
             <a href="fields_regions.php" class="item">Fields & Regions</a>
             <a href="fields.php" class="item">Fields</a>
         </div>
-        </div>
     </header>
-    <div class="container">
     <form class="form-add" action="insert_develop.php" method="post">
         <div class="form-item">
             <div class="text">name</div>
@@ -119,5 +116,4 @@
             echo "<div class='alert alert-info'>Регионы не найдены не найдены.</div>";
         }
     ?>
-    </div>
 </body>
