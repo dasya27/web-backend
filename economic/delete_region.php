@@ -1,6 +1,5 @@
 <?php
     //подключаемся к базе данных
-    if($_GET) {
         include('connection.php');
         $conn = connect();
         //принимаем этот параметр
@@ -11,5 +10,5 @@
         $stmt->bindParam(1, $id);
         $stmt->execute();
 
-    }
+        header('Location: regions.php');
 ?>
