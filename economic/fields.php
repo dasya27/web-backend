@@ -32,10 +32,10 @@
     </header>
     <form class="form-add" action="insert_field.php" method="post">
         <div class="form-item">
-            <div class="text">Отрасль специализации</div>
+            <div class="text">field</div>
             <input type="text" name="name" class="form-control">
         </div>
-        <input type="submit" class="btn btn-warning" value="add" />
+        <input type="submit" class="btn btn-warning" value="добавить" />
     </form>
 
 
