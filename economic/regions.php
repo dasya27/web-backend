@@ -74,11 +74,7 @@
                 <a href='update_region.php?id={$id}' class='btn btn-info left-margin'>
                 <span class='glyphicon glyphicon-edit'></span> Редактировать
 
-                <a delete-id='{$id}' onClick=\"javascript: 
-                    if(confirm('Вы действительно хотите удалить запись?'))
-                    {
-                        header('Location: delete_region.php');
-                    };\" class='btn btn-danger delete-object'>
+                <a delete-id='{$id}' onClick=confirm_region() class='btn btn-danger delete-object'>
                 <span class='glyphicon glyphicon-remove'></span> Удалить
                 </a>";
                 
@@ -93,6 +89,14 @@
     }
 ?>
 
-
+<script>
+    function conform_region() {
+        let result = confirm("Вы действительно хотите удалить запись?");
+        if(result)
+        {
+            window.location.href = "delete_region.php";
+        }
+    }
+</script>
 
 </body>
