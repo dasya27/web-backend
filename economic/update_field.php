@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="style.css">
 
 <div class="right-button-margin">
-    <a href="regions.php" class="btn btn-warning">Просмотр всех товаров</a>
+    <a href="fields.php" class="btn btn-warning">Просмотр всех товаров</a>
 </div>
 
 <?php 
