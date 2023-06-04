@@ -22,17 +22,17 @@
             <a href="regions.php" class="item">Regions</a>
             <a href="develop.php" class="item">Develop</a>
             <a href="statistics.php" class="item">Statistics</a>
-            <a href="fields_regions" class="item">Fields</a>
+            <a href="fields_regions.php" class="item">Fields</a>
         </div>
     </header>
     <form class="form-add" action="insert_fields_regions.php" method="post">
         <div class="form-item">
-            <div class="text">name</div>
-            <input type="text" name="name" class="form-control">
+            <div class="text">region</div>
+            <input type="text" name="region_name" class="form-control">
         </div>
         <div class="form-item">
             <div class="text">field</div>
-            <input type="text" name="field" class="form-control">
+            <input type="text" name="field_name" class="form-control">
         </div>
         <input type="submit" class="btn btn-warning" value="add" />
     </form>
