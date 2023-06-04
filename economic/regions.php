@@ -16,7 +16,6 @@
 
 <?php 
     include_once('connection.php');
-    include_once('delete_region.php');
     $conn = connect();
 ?>
 
