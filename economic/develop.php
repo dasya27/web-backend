@@ -30,7 +30,7 @@
     </header>
     <form class="form-add" action="insert_develop.php" method="post">
         <div class="form-item">
-            <div class="text">name</div>
+            <div class="text">region</div>
             <input type="text" name="name" class="form-control">
         </div>
         <div class="form-item">
@@ -53,7 +53,7 @@
             <div class="text">ecology</div>
             <input type="text" name="ecology" class="form-control">
         </div>
-        <input type="submit" class="btn btn-warning" value="add" />
+        <input type="submit" class="btn btn-warning" value="добавить" />
     </form>
     <?php
         $query = "SELECT * FROM develop";
