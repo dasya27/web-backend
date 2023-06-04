@@ -27,7 +27,7 @@
             <a href="develop.php" class="item">Develop</a>
             <a href="statistics.php" class="item">Statistics</a>
             <a href="fields_regions.php" class="item">Fields & Regions</a>
-            <a href="fields.php" style="color:#f3b600"class="item">Fields</a>
+            <a href="fields.php" style="text-decoration:underline"class="item">Fields</a>
         </div>
     </header>
     <form class="form-add" action="insert_field.php" method="post">
