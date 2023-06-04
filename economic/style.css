@@ -60,20 +60,13 @@ header {
     height: 40px;
 }
 
-.btn-danger, .btn-info {
+.btn-danger, .btn-success {
     width: 130px;
 }
-.btn-info {
+.btn-success {
     margin-right: 30px;
-    color: #fff;
-    background-color: #198754;
-    border-color: #198754;
 }
 
-.btn-info::hover {
-    background-color: #126f44;
-    border-color: #198754;
-}
 
 .form-add {
     width: 370px;
