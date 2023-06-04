@@ -55,7 +55,7 @@
     if ($num > 0) {
         echo "<table class='table table-hover table-responsive table-bordered'>";
         echo "<tr>";
-            echo "<th>id</th>";
+            echo "<th>№</th>";
             echo "<th>Название региона</th>";
             echo "<th>Административный центр</th>";
         echo "</tr>";
