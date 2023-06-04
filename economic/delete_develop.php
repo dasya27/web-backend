@@ -9,5 +9,5 @@
         $stmt->bindParam(1, $id_region);
         $stmt->execute();
 
-        header('Location: regions.php');
+        header('Location: develop.php');
 ?>
