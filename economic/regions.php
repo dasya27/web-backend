@@ -15,7 +15,7 @@
 </body>
 
 <?php 
-    header("Refresh: 5");
+    header('Location: regions.php');
     include('connection.php');
     $conn = connect();
 ?>
