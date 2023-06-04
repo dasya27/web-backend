@@ -70,6 +70,11 @@ header {
     border-color: #198754;
 }
 
+.btn-info::hover {
+    background-color: #126f44;
+    border-color: #198754;
+}
+
 .form-add {
     width: 370px;
     margin: 30px auto;
