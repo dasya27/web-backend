@@ -15,7 +15,7 @@
 </body>
 
 <?php 
-    header("Refresh: 0");
+    header("Refresh: 5");
     include('connection.php');
     $conn = connect();
 ?>
