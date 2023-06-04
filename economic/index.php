@@ -16,7 +16,8 @@
             <a href="regions.php" class="item">Regions</a>
             <a href="develop.php" class="item">Develop</a>
             <a href="statistics.php" class="item">Statistics</a>
-            <a href="fields_regions" class="item">Fields</a>
+            <a href="fields_regions.php" class="item">Fields & Regions</a>
+            <a href="fields.php" class="item">Fields</a>
         </div>
     </header>
 
@@ -26,7 +27,8 @@
         <a href="regions.php" class="btn btn-primary">Regions</a>
         <a href="develop.php" class="btn btn-primary">Develop</a>
         <a href="statistics.php" class="btn btn-primary">Statistics</a>
-        <a href="fields_regions.php" class="btn btn-primary">Fields</a>
+        <a href="fields_regions.php" class="btn btn-primary">Fields & Regions</a>
+        <a href="fields.php" class="btn btn-primary">Fields</a>
     </div>
 </body>
 </html>
