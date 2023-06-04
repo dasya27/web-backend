@@ -45,7 +45,7 @@
             <input type="text" name="production" class="form-control">
         </div>
         <div class="form-item">
-            <div class="text">quality</div>
+            <div class="text">unemploy</div>
             <input type="text" name="unemployment" class="form-control">
         </div>
         <input type="submit" class="btn btn-warning" value="добавить" />
