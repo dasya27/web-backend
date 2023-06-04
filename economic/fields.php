@@ -30,6 +30,7 @@
             <a href="fields.php" style="text-decoration:underline"class="item">Fields</a>
         </div>
     </header>
+    <div style="text-align:center; margin:20px 0 10px 0; font-weight:bold; font-size:20px">Отрасли специализации</div>
     <form class="form-add" action="insert_field.php" method="post">
         <div class="form-item">
             <div class="text">field</div>
