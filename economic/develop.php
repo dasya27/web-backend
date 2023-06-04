@@ -18,7 +18,6 @@
 ?>
 
 <body>
-    <div class="container">
     <header>
         <div class="container">
         <a href="index.php" class="logo">economic</a>
@@ -31,6 +30,7 @@
         </div>
         </div>
     </header>
+    <div class="container">
     <form class="form-add" action="insert_develop.php" method="post">
         <div class="form-item">
             <div class="text">name</div>
