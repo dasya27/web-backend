@@ -66,14 +66,14 @@
                     $stmt1->execute();
                     $row = $stmt1->fetch(PDO::FETCH_ASSOC);
                     $name_region = $row["name"];
-                    echo "<td>{$name}</td>";
+                    echo "<td>{$name_region}</td>";
 
                     //выводим отрасль, опираясь на id
                     $query2 = "SELECT name FROM fields WHERE id=?";
                     $stmt2 = $conn->prepare($query2);
                     $stmt2->bindParam(1, $id_field);
                     $stmt2->execute();
-                    $row2 = $stmt1->fetch(PDO::FETCH_ASSOC);
+                    $row2 = $stmt2->fetch(PDO::FETCH_ASSOC);
                     $name_field = $row2["name"];
                     echo "<td>{$name_field}</td>";
 
