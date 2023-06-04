@@ -84,8 +84,21 @@ header {
     row-gap: 20px;
 }
 
-.form-update {
-    width: 500px;
+.form-update, .on {
+    width: 600px;
+    margin-left: 30px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.on {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .text {
@@ -119,4 +132,8 @@ table {
 
 .item {
     font-size: 19px;
+}
+
+.ago {
+    width: 200px;
 }
