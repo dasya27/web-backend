@@ -94,7 +94,10 @@
         let result = confirm("Вы действительно хотите удалить запись?");
         if(result)
         {
-            window.location.href = "delete_region.php/?id=this.id";
+            //если подтверждено, то удаляем запись
+            <?php 
+                echo $id;
+            ?>
         }
     }
 </script>
