@@ -50,7 +50,7 @@
     </form>
 
     <?php
-        $query = "SELECT * FROM develop";
+        $query = "SELECT * FROM statistics";
         $stmt = $conn->prepare($query);
         $stmt->execute();
 
