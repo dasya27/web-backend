@@ -71,7 +71,7 @@
     }
 ?>
 
-<form class="form-update" action="<?= htmlspecialchars($_SERVER["PHP_SELF"] . "?id={$id}"); ?>" method="post">
+<form class="form-update" action="<?= htmlspecialchars($_SERVER["PHP_SELF"] . "?id_region={$id_region}"); ?>" method="post">
     <table class="table table-hover table-responsive table-bordered">
         <tr>
             <td>Название региона</td>
@@ -111,5 +111,8 @@
         echo "<div class='alert alert-success alert-dismissable'>";
         echo "Товар был обновлён.";
         echo "</div>";
+    }
+    else {
+        echo "no";
     }
 ?>
