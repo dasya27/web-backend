@@ -9,5 +9,5 @@
         $stmt->bindParam(1, $id);
         $stmt->execute();
 
-        header('Location: field.php');
+        header('Location: fields.php');
 ?>
