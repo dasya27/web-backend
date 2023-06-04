@@ -60,14 +60,16 @@
             echo "<th>Административный центр</th>";
         echo "</tr>";
 
+        $n = 1;
+
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
             extract($row);
             echo "<tr>";
-                echo "<td>{$id}</td>";
+                echo "<td>$n</td>";
                 echo "<td>{$name}</td>";
                 echo "<td>{$center}</td>";
-
+            $n = $n+1;
             echo "<td>";
                 // здесь будут кнопки для просмотра, редактирования и удаления
                 echo "
