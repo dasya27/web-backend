@@ -66,7 +66,9 @@ header {
 }
 .btn-info {
     margin-right: 30px;
-    background-color: #0d6801;
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
 }
 
 .form-add {
@@ -105,7 +107,7 @@ header {
 }
 
 table {
-    max-width: 1100px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
