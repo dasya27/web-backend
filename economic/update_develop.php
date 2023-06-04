@@ -36,7 +36,7 @@
 
 <?php
     if($_POST) {
-        $name = $_POST["name"];
+        //$name = $_POST["name"];
         $health = $_POST["health"];
         $education = $_POST["education"];
         $quality = $_POST["quality"];
