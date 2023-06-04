@@ -10,7 +10,7 @@
     $id_region = isset($_GET["id_region"]) ? $_GET["id_region"] : die("ERROR: отсутствует ID.");
     $conn = connect();
 
-    $query = "SELECT id_region, health, education, happy, quality ecology  FROM develop WHERE id_region = ?";
+    $query = "SELECT id_region, health, education, happy, quality, ecology  FROM develop WHERE id_region = ?";
 
     $stmt = $conn->prepare($query);
     $stmt->bindParam(1, $id_region);
