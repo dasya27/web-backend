@@ -80,10 +80,10 @@
     <table class="table table-hover table-responsive table-bordered">
         <tr>
             <td>Название региона</td>
-            <td><input type="text" name="name_region" value="<?= $name_region; ?>" class="form-control" /></td>
+            <td><input type="text" name="name_region" value="<?= $name_region; ?>" class="form-control" readonly/></td>
         </tr>
         <tr>
-            <td>Административный центр</td>
+            <td>Отрасль специализации</td>
             <td><input type="text" name="name_field" value="<?= $name_field; ?>" class="form-control" /></td>
         </tr>
         <tr>
