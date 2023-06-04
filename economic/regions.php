@@ -15,8 +15,8 @@
 </body>
 
 <?php 
-    include('connection.php');
-    include('delete_region.php');
+    include_once('connection.php');
+    include_once('delete_region.php');
     $conn = connect();
 ?>
 
