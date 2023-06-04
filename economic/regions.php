@@ -15,7 +15,7 @@
 </body>
 
 <?php 
-    header('Location: '.$_SERVER['REQUEST_URI']);
+    header("Refresh: 0");
     include('connection.php');
     $conn = connect();
 ?>
