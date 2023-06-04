@@ -30,6 +30,7 @@
             <a href="fields.php" class="item">Fields</a>
         </div>
     </header>
+    <div style="text-align:center; margin:20px 0 10px 0; font-weight:bold; font-size:20px">Регионы и административные центры</div>
     <form class="form-add" action="insert_region.php" method="post">
         <div class="form-item">
             <div class="text">region</div>
