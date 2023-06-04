@@ -28,7 +28,7 @@
     </header>
     <form class="form-add" action="insert_statistics.php" method="post">
         <div class="form-item">
-            <div class="text">name</div>
+            <div class="text">region</div>
             <input type="text" name="name" class="form-control">
         </div>
         <div class="form-item">
@@ -47,7 +47,7 @@
             <div class="text">quality</div>
             <input type="text" name="unemployment" class="form-control">
         </div>
-        <input type="submit" class="btn btn-warning" value="add" />
+        <input type="submit" class="btn btn-warning" value="добавить" />
     </form>
 
     <?php
@@ -63,11 +63,11 @@
             echo "<table class='table table-hover table-responsive table-bordered'>";
             echo "<tr>";
                 echo "<th>№</th>";
-                echo "<th>Регион</th>";
-                echo "<th>Площадь</th>";
-                echo "<th>Население</th>";
-                echo "<th>Производство %</th>";
-                echo "<th>Безработица</th>";
+                echo "<th>Название региона</th>";
+                echo "<th>Площадь (кв.км)</th>";
+                echo "<th>Население (чел)</th>";
+                echo "<th>Производство (%)</th>";
+                echo "<th>Безработица (%)</th>";
             echo "</tr>";
 
             $n = 1;
