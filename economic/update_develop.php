@@ -25,7 +25,7 @@
     $row1 = $stmt1->fetch(PDO::FETCH_ASSOC);
     
     $name = $row1["name"];
-    $health = strval($row["health"]);
+    $health = $row["health"];
     $education = $row["education"];
     $quality = $row["quality"];
     $happy = $row["happy"];
@@ -37,15 +37,15 @@
 <?php
     if($_POST) {
         $name = $_POST["name"];
-        $health = (float)$_POST["health"];
-        $education = (float)$_POST["education"];
-        $quality = (float)$_POST["quality"];
-        $happy = (float)$_POST["happy"];
-        $ecology = (float)$_POST["ecology"];
+        $health = $_POST["health"];
+        $education = $_POST["education"];
+        $quality = $_POST["quality"];
+        $happy = $_POST["happy"];
+        $ecology = $_POST["ecology"];
 
         //$_POST["name"] = $name;
-        $_POST["health"] = strval($health);
-        $_POST["education"] = strval($education);
+        $_POST["health"] = $health;
+        $_POST["education"] = $education;
         $_POST["quality"] = $quality;
         $_POST["happy"] = $happy;
         $_POST["ecology"] = $ecology;
@@ -79,7 +79,7 @@
         </tr>
         <tr>
             <td>Медицина</td>
-            <td><input type="text" name="health" value="<?= strval($health); ?>" class="form-control" /></td>
+            <td><input type="text" name="health" value="<?= $health; ?>" class="form-control" /></td>
         </tr>
         <tr>
             <td>Образование</td>
