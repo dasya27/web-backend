@@ -1,6 +1,6 @@
 <?php
     //подключаемся к базе данных
-        include('connection.php');
+        include_once('connection.php');
         $id = isset($_GET["id"]) ? $_GET["id"] : die("ERROR: отсутствует ID.");
         $conn = connect();
 
