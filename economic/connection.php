@@ -1,6 +1,5 @@
 
 <?php
-    
 
     function connect()
     {
@@ -13,7 +12,6 @@
         //подключение к бд
         try {
             $conn = new PDO('mysql:host=localhost;dbname=u52955', $username, $password,);
-            echo 'Соединились!';
         }
         catch(PDOException $e)
         {
