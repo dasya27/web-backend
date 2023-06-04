@@ -17,11 +17,11 @@
     $stmt1->bindParam(1, $name);
     $stmt1->execute();
     
-    $num = $stmt->rowCount();
+    $num = $stmt1->rowCount();
 
     if($num>0)
     {
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        $row = $stmt1->fetch(PDO::FETCH_ASSOC);
         $id = $row["id"];
 
         //подготавливаем запрос
