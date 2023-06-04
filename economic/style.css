@@ -22,7 +22,7 @@ h1 {
 
 header {
     height: 60px;
-    background-color: #1d78b9;
+    background-color: #0d6efd;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,7 +57,7 @@ header {
 }
 
 .btn-primary {
-    height: 60px;
+    height: 40px;
 }
 
 .btn-danger, .btn-success {
