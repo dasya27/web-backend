@@ -37,15 +37,15 @@
 <?php
     if($_POST) {
         $name = $_POST["name"];
-        $health = $_POST["health"];
-        $education = $_POST["education"];
-        $quality = $_POST["quality"];
-        $happy = $_POST["happy"];
-        $ecology = $_POST["ecology"];
+        $health = (double)$_POST["health"];
+        $education = (double)$_POST["education"];
+        $quality = (double)$_POST["quality"];
+        $happy = (double)$_POST["happy"];
+        $ecology = (double)$_POST["ecology"];
 
         //$_POST["name"] = $name;
-        $_POST["health"] = $health;
-        $_POST["education"] = $education;
+        $_POST["health"] = strval($health);
+        $_POST["education"] = strval($education);
         $_POST["quality"] = $quality;
         $_POST["happy"] = $happy;
         $_POST["ecology"] = $ecology;
