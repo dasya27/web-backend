@@ -79,7 +79,7 @@
         </tr>
         <tr>
             <td>Медицина</td>
-            <td><input type="text" name="health" value="<?= $health; ?>" class="form-control" /></td>
+            <td><input type="text" name="health" value="<?= strval($health); ?>" class="form-control" /></td>
         </tr>
         <tr>
             <td>Образование</td>
