@@ -91,7 +91,9 @@ header {
     width: 270px;
 }
 
-.fade:not(.show) {
-    opacity: none;
+.container {
+    width: 1100px;
+    margin: 0 auto;
 }
+
 
