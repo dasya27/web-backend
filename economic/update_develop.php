@@ -2,7 +2,10 @@
 <link rel="stylesheet" href="style.css">
 
 <div class="right-button-margin">
-    <a href="develop.php" class="btn btn-warning">Просмотр всей таблицы</a>
+    <div class="on">
+    <div class="title">Редактирование показателей развития</div>
+    <a href="develop.php" class="btn btn-warning ago">Просмотр всех записей</a>
+    </div>
 </div>
 
 <?php 
