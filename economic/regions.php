@@ -15,6 +15,7 @@
 </body>
 
 <?php 
+    header('Location: '.$_SERVER['REQUEST_URI']);
     include('connection.php');
     $conn = connect();
 ?>
