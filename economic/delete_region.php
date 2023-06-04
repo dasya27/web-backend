@@ -1,6 +1,7 @@
 <?php
     //подключаемся к базе данных
         include('connection.php');
+        $id = isset($_GET["id"]) ? $_GET["id"] : die("ERROR: отсутствует ID.");
         $conn = connect();
 
         $query = "DELETE FROM regions WHERE id = ?";
