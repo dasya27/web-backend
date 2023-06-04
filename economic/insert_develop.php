@@ -25,7 +25,7 @@
         $id = $row["id"];
 
         //подготавливаем запрос
-        $query = $conn->prepare("INSERT INTO develop (id, health, education, happy, quality, ecology) VALUES(?, ?, ?, ?, ?, ?)");
+        $query = $conn->prepare("INSERT INTO develop (id_region, health, education, happy, quality, ecology) VALUES(?, ?, ?, ?, ?, ?)");
         $mass = array($id, $health, $education, $happy, $quality, $ecology);
         $query->execute($mass);
     }
