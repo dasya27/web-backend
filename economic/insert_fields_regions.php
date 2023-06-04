@@ -27,7 +27,7 @@
         $row1 = $stmt1->fetch(PDO::FETCH_ASSOC);
         $id_region = $row1["id"];
 
-        $row1 = $stmt2->fetch(PDO::FETCH_ASSOC);
+        $row2 = $stmt2->fetch(PDO::FETCH_ASSOC);
         $id_field = $row2["id"];
 
         //подготавливаем запрос
