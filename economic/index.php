@@ -26,7 +26,7 @@
         <a href="regions.php" class="btn btn-primary">Regions</a>
         <a href="develop.php" class="btn btn-primary">Develop</a>
         <a href="statistics.php" class="btn btn-primary">Statistics</a>
-        <a href="fields.php" class="btn btn-primary">Fields</a>
+        <a href="fields_regions.php" class="btn btn-primary">Fields</a>
     </div>
 </body>
 </html>
