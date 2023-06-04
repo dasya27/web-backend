@@ -10,5 +10,5 @@
     $stmt->bindParam(1, $id);
     $stmt->execute();
 
-    header('Location: regions.php');
+    header("location:javascript://history.go(-1)");
 ?>
