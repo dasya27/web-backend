@@ -62,7 +62,6 @@ header {
 
 .btn-danger, .btn-info {
     width: 130px;
-    height: 25px;
 }
 .btn-info {
     margin-right: 30px;
@@ -107,8 +106,7 @@ header {
 }
 
 table {
-    max-width: 1300px;
-    margin: 0 auto;
+    margin: 0 50px;
 }
 
 
