@@ -36,6 +36,6 @@
         $query->execute($mass);
     }
 
-    header('Location: develop.php');
+    header('Location: fields_regions.php');
 
 ?>
