@@ -6,11 +6,11 @@
     $conn = connect();
 
     $name = $_POST['name'];
-    $health = (float)$_POST['health'];
-    $education = (float)$_POST['education'];
-    $happy = (float)$_POST['happy'];
-    $quality = (float)$_POST['quality'];
-    $ecology = (float)$_POST['ecology'];
+    $health = $_POST['health'];
+    $education = $_POST['education'];
+    $happy = $_POST['happy'];
+    $quality = $_POST['quality'];
+    $ecology = $_POST['ecology'];
 
     $query1 = "SELECT id FROM regions WHERE name=?";
     $stmt1 = $conn->prepare($query1);
