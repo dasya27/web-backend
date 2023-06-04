@@ -69,7 +69,7 @@
             echo "<table class='table table-hover table-responsive table-bordered'>";
             echo "<tr>";
                 echo "<th>№</th>";
-                echo "<th>Название региона</th>";
+                echo "<th>Регион</th>";
                 echo "<th>Медицина (%)</th>";
                 echo "<th>Образование (%)</th>";
                 echo "<th>Уровень счастья (%)</th>";
