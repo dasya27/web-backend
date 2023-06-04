@@ -74,7 +74,7 @@
                 <a href='update_region.php?id={$id}' class='btn btn-info left-margin'>
                 <span class='glyphicon glyphicon-edit'></span> Редактировать
 
-                <a delete-id='{$id}' onClick=\"javascript: return confirm('Please confirm deletion');\" class='btn btn-danger delete-object'>
+                <a delete-id='{$id}' class='btn btn-danger delete-region'>
                 <span class='glyphicon glyphicon-remove'></span> Удалить
                 </a>";
                 
@@ -89,5 +89,38 @@
     }
 ?>
 
+<script>
+    // JavaScript для удаления товара
+    $(document).on("click", ".delete-region", function() {
+        const id = $(this).attr("delete-id");
+
+        bootbox.confirm({
+            message: "<h4>Вы действительно хотите удалить запись?</h4>",
+            buttons: {
+                confirm: {
+                    label: "<span class='glyphicon glyphicon-ok'></span> Да",
+                    className: "btn-danger"
+                },
+                cancel: {
+                    label: "<span class='glyphicon glyphicon-remove'></span> Нет",
+                    className: "btn-primary"
+                }
+            },
+            callback: function(result) {
+                if (result == true) {
+                    $.post("delete_region.php", {
+                        object_id: id
+                    }, function(data) {
+                        location.reload();
+                    }).fail(function() {
+                        alert("Невозможно удалить.");
+                    });
+                }
+            }
+        });
+
+        return false;
+    });
+</script>
 
 </body>
