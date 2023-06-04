@@ -1,7 +1,6 @@
 <?php
     //подключаемся к базе данных
-        include('connection.php');
-        $conn = connect();
+
         //принимаем этот параметр
         $id = $_GET['id'];
 
