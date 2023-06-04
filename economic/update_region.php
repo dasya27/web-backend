@@ -2,7 +2,10 @@
 <link rel="stylesheet" href="style.css">
 
 <div class="right-button-margin">
-    <a href="regions.php" class="btn btn-warning">Просмотр всех товаров</a>
+    <div class="on">
+    <div class="title">Редактирование региона</div>
+    <a href="regions.php" class="btn btn-warning ago">Просмотр всех записей</a>
+    </div>
 </div>
 
 <?php 
