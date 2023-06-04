@@ -94,10 +94,7 @@
         let result = confirm("Вы действительно хотите удалить запись?");
         if(result)
         {
-            //если подтверждено, то удаляем запись
-            <?php 
-                echo '<h1> ffff</h1>';
-            ?>
+            window.location.href = 'delete.php/?id='+id;
         }
     }
 </script>
