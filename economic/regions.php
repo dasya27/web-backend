@@ -90,7 +90,7 @@
 ?>
 
 <script>
-    function conform_region() {
+    function confirm_region() {
         let result = confirm("Вы действительно хотите удалить запись?");
         if(result)
         {
