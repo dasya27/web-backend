@@ -1,8 +1,7 @@
 <?php
     //подключаемся к базе данных
-
-        //принимаем этот параметр
-        $id = $_GET['id'];
+        include('connection.php');
+        $conn = connect();
 
         $query = "DELETE FROM regions WHERE id = ?";
         $stmt = $conn->prepare($query);
