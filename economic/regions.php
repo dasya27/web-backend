@@ -74,7 +74,7 @@
             echo "<td>";
                 // здесь будут кнопки для просмотра, редактирования и удаления
                 echo "
-                <a href='update_region.php?id={$id}' class='btn btn-info left-margin'>
+                <a href='update_region.php?id={$id}' class='btn btn-success left-margin'>
                 <span class='glyphicon glyphicon-edit'></span> Редактировать
 
                 <a href='delete_region.php?id={$id}' class='btn btn-danger delete-object'>
