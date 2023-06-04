@@ -18,6 +18,7 @@
 ?>
 
 <body>
+    <div class="container">
     <header>
         <a href="index.php" class="logo">economic</a>
         <div class="menu">
@@ -116,4 +117,5 @@
             echo "<div class='alert alert-info'>Регионы не найдены не найдены.</div>";
         }
     ?>
+    </div>
 </body>
