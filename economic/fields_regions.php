@@ -26,6 +26,7 @@
             <a href="fields.php" class="item">Fields</a>
         </div>
     </header>
+    <div style="text-align:center; margin:20px 0 10px 0; font-weight:bold; font-size:20px">Отрасли специализации и регионы</div>
     <form class="form-add" action="insert_fields_regions.php" method="post">
         <div class="form-item">
             <div class="text">region</div>
