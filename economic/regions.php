@@ -15,8 +15,8 @@
 </body>
 
 <?php 
-    header('Location: regions.php');
     include('connection.php');
+    include('delete_region.php');
     $conn = connect();
 ?>
 
@@ -95,7 +95,10 @@
         let result = confirm("Вы действительно хотите удалить запись?");
         if(result)
         {
-            window.location.href = 'delete_region.php/?id='+id;
+            //window.location.href = 'delete_region.php/?id='+id;
+            <?php 
+                echo 'ccccccc';
+            ?>
         }
     }
 </script>
