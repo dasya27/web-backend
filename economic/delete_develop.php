@@ -1,7 +1,7 @@
 <?php
     //подключаемся к базе данных
         include_once('connection.php');
-        $id = $_GET["id_region"];
+        $id_region = $_GET["id_region"];
         $conn = connect();
 
         $query = "DELETE FROM develop WHERE id_region = ?";
