@@ -20,6 +20,7 @@
 <body>
     <div class="container">
     <header>
+        <div class="container">
         <a href="index.php" class="logo">economic</a>
         <div class="menu">
             <a href="regions.php" class="item">Regions</a>
@@ -27,6 +28,7 @@
             <a href="statistics.php" class="item">Statistics</a>
             <a href="fields_regions.php" class="item">Fields & Regions</a>
             <a href="fields.php" class="item">Fields</a>
+        </div>
         </div>
     </header>
     <form class="form-add" action="insert_develop.php" method="post">
