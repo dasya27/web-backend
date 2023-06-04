@@ -28,6 +28,8 @@ header {
     justify-content: space-between;
     padding: 0 10px;
     color:white;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .menu {
@@ -93,6 +95,11 @@ header {
 
 .container {
     width: 1100px;
+    margin: 0 auto;
+}
+
+table {
+    max-width: 1100px;
     margin: 0 auto;
 }
 
