@@ -67,6 +67,7 @@
             echo "<table class='table table-hover table-responsive table-bordered'>";
             echo "<tr>";
                 echo "<th>№</th>";
+                echo "<th>Регион</th>";
                 echo "<th>Медицина</th>";
                 echo "<th>Образование</th>";
                 echo "<th>Уровень счастья</th>";
@@ -85,8 +86,8 @@
                     $stmt1 = $conn->prepare($query1);
                     $stmt1->bindParam(1, $id_region);
                     $stmt1->execute();
-                    $row = $stmt->fetch(PDO::FETCH_ASSOC);
-                    $name = $row["id"];
+                    $row = $stmt1->fetch(PDO::FETCH_ASSOC);
+                    $name = $row["name"];
                     echo "<td>{$name}</td>";
 
                     echo "<td>{$health}</td>";
