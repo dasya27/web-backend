@@ -28,6 +28,7 @@
             <a href="fields.php" class="item">Fields</a>
         </div>
     </header>
+    <div class="title">Показатели развития региона</div>
     <form class="form-add" action="insert_develop.php" method="post">
         <div class="form-item">
             <div class="text">region</div>
@@ -68,12 +69,12 @@
             echo "<table class='table table-hover table-responsive table-bordered'>";
             echo "<tr>";
                 echo "<th>№</th>";
-                echo "<th>Регион</th>";
-                echo "<th>Медицина</th>";
-                echo "<th>Образование</th>";
-                echo "<th>Уровень счастья</th>";
-                echo "<th>Качество жизни</th>";
-                echo "<th>Экология</th>";
+                echo "<th>Название региона</th>";
+                echo "<th>Медицина (%)</th>";
+                echo "<th>Образование (%)</th>";
+                echo "<th>Уровень счастья (%)</th>";
+                echo "<th>Качество жизни (%)</th>";
+                echo "<th>Экология (%)</th>";
             echo "</tr>";
 
             $n = 1;
